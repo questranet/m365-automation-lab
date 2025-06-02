@@ -1,0 +1,30 @@
+PowerShell offers automation, efficiency, and precision in Microsoft 365 management, surpassing GUI limitations with scripting capabilities, scalability, advanced task automation, boosting productivity and control. 
+
+
+
+Access PowerShell on Windows by searching 'PowerShell' in Start menu, or typing 'powershell' in Run dialog box (Windows key + R). Right click on PowerShell and choose Run ISE(Integrated Scripting Environment) as Administrator.
+
+
+
+First thing to do in a scripting environment is to check your execution policy with this command: 
+
+- Get-ExecutionPolicy
+
+
+
+Depending on the response you get on the CLI, this lets you know if scripting is allowed or restricted on the interface. The responses can either be any of these: 
+
+
+
+*Unrestricted, a PowerShell execution policy that allows all scripts to run, regardless of their origin (local or remote).
+
+*Restricted, scripting is not allowed to run in the ISE.
+
+*RemoteSigned, execution policy allows scripts to run if they are either created locally (on your machine) or they are digitally signed by a trusted publisher if they originate from remote sources (like the internet).
+
+*AllSigned, execution policy that requires all scripts (both local and remote) to be digitally signed by a trusted publisher before they can be executed.
+
+*Bypass, nothing is blocked, and there are no warnings or prompts. Use this policy with caution.
+
+*Undefined: No execution policy is set for the scope.
+
